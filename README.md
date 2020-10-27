@@ -1,4 +1,7 @@
 # How to Deploy Django Applications on Heroku
+## Author
+
+[Joseph-Odhiambo](https://github.com/Joseph-Odhiambo)
 
 ## Install heroku CLI
 [Sign up](https://signup.heroku.com/) to Heroku.
@@ -192,7 +195,7 @@ Create a postgres addon to your heroku app
 heroku addons:create heroku-postgresql:hobby-dev
 ```
 Next we log in to [Heroku dashboard](https://dashboard.heroku.com/apps) to access our app and configure it
-<img src="" width="800px" height="400px">
+<img src="https://github.com/Joseph-Odhiambo/Django-Deployment-to-Heroku/blob/master/images/Screenshot%20from%202020-10-27%2015-08-32.png?raw=true" width="800px" height="400px">
 
 Click on the Settings menu and then on the button Reveal Config Vars: Next add all the environment vaiables, by default you should have ```DATABASE_URI``` configuration created after installing postgres to heroku.
 Alternatively you can add all your configurations in ```.env``` file directly to heroku by running the this command.
@@ -201,7 +204,7 @@ heroku config:set $(cat .env | sed '/^$/d; /#[[:print:]]*$/d')
 ```
 Remember to first set ```DEBUG``` to false and confirm that you have added all the confuguration variables needed.
 
-<img src="" width="800px" height="400px">
+<img src="https://github.com/Joseph-Odhiambo/Django-Deployment-to-Heroku/blob/master/images/Screenshot%20from%202020-10-27%2015-11-58.png?raw=true" width="800px" height="400px">
 
 #### pushing to heroku
 confirm that your application is running as expected before pushing, runtime errors will cause deployment to fail so make sure you have no bugs, you have all the following ```Procfile```, ```requirements.txt``` with all required packages and ```runtime.txt``` .
@@ -297,3 +300,11 @@ Remember heroku does not offer support for media files in the free tier subscrip
 ### very helpfull articles
 * https://simpleisbetterthancomplex.com/tutorial/2016/08/09/how-to-deploy-django-applications-on-heroku.html
 * https://simpleisbetterthancomplex.com/2015/11/26/package-of-the-week-python-decouple.html
+
+## Contact Information 
+
+If you have any question or contributions, please email me at josephkdo@gmail.com
+
+## License
+* *MIT License:*
+* Copyright (c) 2020 **Joseph Odhiambo**
