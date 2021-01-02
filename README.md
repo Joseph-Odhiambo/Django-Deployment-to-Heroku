@@ -306,5 +306,6 @@ Remember heroku does not offer support for media files in the free tier subscrip
 If you have any question or contributions, please email me at josephkdo@gmail.com
 
 ## License
+
 * [*MIT License:*](LICENSE)
 * Copyright (c) 2020 **Joseph Odhiambo**
